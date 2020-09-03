@@ -15,7 +15,7 @@ int xwin_init(int w, int h)
    assert(win == NULL);
    win = SDL_CreateWindow("PRG Semester Project", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, w, h, SDL_WINDOW_SHOWN);
    assert(win != NULL);
-   SDL_SetWindowTitle(win, "PRG SEM");
+   SDL_SetWindowTitle(win, "Tank APOcalypse");
    //SDL_Surface *surface = SDL_CreateRGBSurfaceFrom(icon_32x32_bits, 32, 32, 24, 32*3, 0xff, 0xff00, 0xff0000, 0x0000);
    //SDL_SetWindowIcon(win, surface);
    //SDL_FreeSurface(surface);
@@ -52,7 +52,7 @@ void xwin_resize(int w, int h)
 	xwin_init(w, h);
 }
 
-void xwin_poll_events(void) 
+void xwin_poll_events(void)
 {
    SDL_Event event;
    while (SDL_PollEvent(&event));
