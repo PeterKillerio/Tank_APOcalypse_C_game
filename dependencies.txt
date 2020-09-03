@@ -1,0 +1,4 @@
+You need to be able to compile C files.
+For windows use http://www.mingw.org/
+Downlaod and install SDL2
+https://wiki.libsdl.org/Installation
